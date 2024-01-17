@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "a4c9e84a-4e1e-4490-bebe-df90bc643a57",
+		"name": "Basic auth and registration task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14486139"
+	},
+	"item": [
+		{
+			"name": "user_auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "07b38cd0e778340eb40b25e005476ce8",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Иван",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Иванов",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Москва",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Россия",
+							"type": "text"
+						},
+						{
+							"key": "sig",
+							"value": "5427b31460cd807aab7e184364960958",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "laravel.auth/api/user_auth",
+					"host": [
+						"laravel",
+						"auth"
+					],
+					"path": [
+						"api",
+						"user_auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
